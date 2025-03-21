@@ -1,0 +1,24 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+.navbar-brand{
+    width: 10%;
+}
+.navbar{
+    background-color: #ff5722;
+}
+.nav-item a{
+    color: white;
+    font-weight: bold;
+}
+.dropdown-item{
+    color:  #5e35b1 !important;
+}
+#HOME{
+    height: 85vw;
+    width: 99vw;
+}
+#ABOUT{
+    margin-top: 100px;
+}
