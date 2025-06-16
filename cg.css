@@ -1,0 +1,47 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+/* Hero Section */
+header {
+    min-height: 60vh;
+}
+
+/* Project Cards */
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact a {
+    transition: background 0.3s;
+}
+
+#contact a:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+/* Footer */
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}

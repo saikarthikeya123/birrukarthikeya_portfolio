@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO</title>
+    <!-- CSS Files -->
     <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -14,9 +15,9 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="1.webp" alt="12" width="40%"></a>
+        <a class="navbar-brand" href="#"><img src="1.webp" alt="logo" width="40%"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa-solid fa-bars" style="color: white; border: 1px solid  ;"></i>
+          <i class="fa-solid fa-bars navbar-toggle-icon"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -24,178 +25,316 @@
               <a class="nav-link" href="#ABOUT">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#SKILLS">SKILLS</a>
+              <a class="nav-link" href="#SKILLS">SKILLS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#certifications">CERTIFICATIONS</a>
+              <a class="nav-link" href="#certifications">CERTIFICATIONS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#PROJECT">PROJECTS</a>
+              <a class="nav-link" href="#PROJECT">PROJECTS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="BIRRU-SAI-KARTHIKEYA-FlowCV-Resume-20250224_compressed.pdf">RESUME</a>
+              <a class="nav-link" href="BIRRU-SAI-KARTHIKEYA-FlowCV-Resume-20250224_compressed.pdf">RESUME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#contact">CONTACT</a>
+              <a class="nav-link" href="#contact">CONTACT</a>
             </li>
           </ul>
-          <!-- <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form> -->
         </div>
       </div>
     </nav>    
-    <section id="ABOUT">
-      <h1 style="color: #9c27b0; display: flex; flex-direction: row; justify-content: center; padding-top: 12px;">ABOUT</h1>
+
+    <section id="ABOUT" class="py-5">
+      <h1 class="section-title">ABOUT</h1>
       <div class="container">
-        <div class="row m-5">
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
             <h5>Hello I'm</h5>
-            <h1 style="color: #2196f3;">B SAI KARTHIKEYA</h1>
-            <h3 style="color: #e91e63;">Front End Developer</h3>
-            <p>Creative and detail-oriented Front-End Developer passionate about building responsive and user-friendly web applications. Skilled in HTML, CSS, and JavaScript, with experience in developing interactive and 
-            visually appealing websites. Eager to leverage technical expertise and problem-solving skills to contribute to innovative projects.</p>
-            <div style="display: flex; flex-direction: column; gap: 10px;">
-              <a href="https://www.linkedin.com/in/sai-karthikeya-birru-23012126a/" style="text-decoration: none; color: #4caf50;">
+            <h1 class="name">B SAI KARTHIKEYA</h1>
+            <p>I have recently completed my final semester exams in B.Tech – Computer Science and Engineering at KL University. I have a strong interest in full-stack software development and am skilled in Python, JavaScript, HTML/CSS, Flask, and MySQL. I am currently enhancing my skills through Python Full Stack Developer training at Codegnan, gaining hands-on experience in both front-end and back-end development. I am confident in team collaboration, communication, and problem-solving, and I am eager to apply my skills to real-world projects while continuing to learn and grow in a dynamic software development role."</p>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/sai-karthikeya-birru-23012126a/" class="me-3 social-link">
                 <i class="fa-brands fa-linkedin"></i> LINKEDIN
               </a>
-              <a href="https://github.com/saikarthikeya123" style="text-decoration: none; color: #4caf50;">
+              <a href="https://github.com/saikarthikeya123" class="social-link">
                 <i class="fa-brands fa-github"></i> GITHUB
               </a>
-
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="padding-left: 150px;">
-            <img src="sai_profile.jpeg" alt="12" width="60%">
+          <div class="col-12 col-md-6 profile-img">
+            <img src="sai_profile.jpeg" alt="profile" class="img-fluid">
           </div>
         </div>
       </div>
     </section> 
-    <section id="SKILLS">
-      <h1 style="color: #9c27b0; display: flex; flex-direction: row; justify-content: center;">SKILLS</h1>
+
+
+    <!-- Professional Experience Section -->
+    <section id="experience" class="py-5">
+      <h1 class="section-title">PROFESSIONAL EXPERIENCE</h1>
       <div class="container">
-        <div class="row m-5">
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="border: 3px solid red; box-shadow: 6px 6px 3px grey;">
-            <p style="margin-top: 10px;">I possess a diverse set of technical skills, including proficiency in Python, C, and JavaScript. My expertise in web development spans HTML, CSS, and JavaScript, enabling me to build responsive 
-            and interactive websites. I am also experienced in working with MySQL for efficient database management. Additionally, I am familiar with tools like CodeReady Studio for development and Stripe for secure payment integration. On the soft skills front, I excel in problem-solving, communication, and team collaboration, and I continuously strive to enhance my adaptability and time management abilities.</p>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-            <p class="m-3"><i class="fa-brands fa-html5"></i>HTML</p>
-            <div class="progress m-3">
-              <div class="progress-bar" role="progressbar" style="width: 85% " aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-            </div>
-            <p class="m-3"><i class="fa-brands fa-css3-alt"></i>CSS</p>
-            <div class="progress m-3">
-              <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-            </div>
-            <p class="m-3"><i class="fa-brands fa-bootstrap"></i>BOOTSTRAP</p>
-            <div class="progress m-3">
-              <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-            </div>
-            <p class="m-3"><i class="fa-brands fa-js"></i>JAVA SCRIPT</p>
-            <div class="progress m-3">
-              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-            </div>
-            <p class="m-3"><i class="fa-brands fa-python"></i>PYTHON</p>
-            <div class="progress m-3">
-              <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+        <div class="row">
+          <div class="col-12">
+            <div class="p-4 border rounded shadow-sm">
+              <h5>Codegnan IT Solutions</h5>
+              <p><strong>Python Full Stack Trainee</strong></p>
+              <p>Currently undergoing Python Full Stack Developer training at Codegnan IT Solutions, with a focus on building dynamic web applications using HTML, CSS, Bootstrap, JavaScript, MySQL, and Flask. Gaining hands-on experience in both front-end and back-end development.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="certifications">
-      <h1 style="color: #9c27b0; display: flex; flex-direction: row; justify-content: center; padding-top: 12px;">CERTIFICATIONS</h1>
-      <div class="container" style="display: flex; flex-direction: row; justify-content: space-evenly;">
-        <div>
-          <div class="card" style="width: 17rem;">
-            <img src="Screenshot (183).png" class="card-img-top" alt="...">
+
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+      <h1 class="section-title">EDUCATION</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="p-3 border rounded shadow-sm mb-3">
+              <h6>B-Tech (Computer Science and Engineering)</h6>
+              <p>KL University, Vijayawada, India<br>2021 – 2025<br>8.55 CGPA</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="p-3 border rounded shadow-sm mb-3">
+              <h6>Intermediate</h6>
+              <p>PAGE JUNIOR COLLEGE, Hyderabad, India<br>2021<br>91%</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="p-3 border rounded shadow-sm mb-3">
+              <h6>SSC</h6>
+              <p>BHASHYAM BLOOMS, Hyderabad, India<br>2019<br>9.5 CGPA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="SKILLS" class="py-5">
+      <h1 class="section-title">SKILLS</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 skills-box">
+            <div class="p-4 border rounded shadow-sm">
+              <p>I possess a diverse set of technical skills, including proficiency in Python, C, and JavaScript. My expertise in web development spans HTML, CSS, and JavaScript, enabling me to build responsive 
+              and interactive websites. I am also experienced in working with MySQL for efficient database management. Additionally, I am familiar with tools like CodeReady Studio for development and Stripe for secure payment integration. On the soft skills front, I excel in problem-solving, communication, and team collaboration, and I continuously strive to enhance my adaptability and time management abilities.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="skill-bars">
+              <p class="m-3"><i class="fa-brands fa-html5"></i>HTML</p>
+              <div class="progress m-3">
+                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+              </div>
+              <p class="m-3"><i class="fa-brands fa-css3-alt"></i>CSS</p>
+              <div class="progress m-3">
+                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+              </div>
+              <p class="m-3"><i class="fa-brands fa-bootstrap"></i>BOOTSTRAP</p>
+              <div class="progress m-3">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+              </div>
+              <p class="m-3"><i class="fa-brands fa-js"></i>JAVA SCRIPT</p>
+              <div class="progress m-3">
+                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+              </div>
+              <p class="m-3"><i class="fa-brands fa-python"></i>PYTHON</p>
+              <div class="progress m-3">
+                <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="py-5">
+      <h1 class="section-title">CERTIFICATIONS</h1>
+      <div class="container">
+        <div class="certification-cards">
+          <div class="card h-100">
+            <img src="Screenshot (183).png" class="card-img-top" alt="Aviatrix Certification">
             <div class="card-body">
               <h5 class="card-title">Aviatrix Certified Engineer – Multicloud Network Associate</h5>
               <p class="card-text">Successfully earned the Aviatrix Certified Engineer (ACE) – Multicloud Network Associate certification, demonstrating proficiency in multicloud networking concepts, architecture, and security. Skilled in deploying and managing cloud network infrastructure across platforms like AWS, Azure, GCP, and OCI. 
               Capable of handling hybrid cloud connectivity, network segmentation, and security best practices.</p>
-              <a href="MultiCloudNetwork.220250319-27-z8v1sd.pdf" class="btn btn-primary">Click Here to view Certificate</a>
+              <a href="MultiCloudNetwork.220250319-27-z8v1sd.pdf" class="btn btn-primary">View Certificate</a>
             </div>
           </div>
-        </div>
-        <div>
-          <div class="card" style="width: 18rem;">
-            <img src="Screenshot (184).png" class="card-img-top" alt="...">
+          
+          <div class="card h-100">
+            <img src="Screenshot (184).png" class="card-img-top" alt="Red Hat Certification">
             <div class="card-body">
               <h5 class="card-title">Red Hat Certified Enterprise Application Developer</h5>
               <p class="card-text">Successfully earned the Red Hat Certified Enterprise Application Developer certification, validating expertise in Java Enterprise Edition (JEE) development. Skilled in building, deploying, and maintaining enterprise applications using Red Hat JBoss® EAP. Proficient in RESTful web services, 
               JSON processing, and security configurations, with a strong focus on enterprise-grade application development.</p>
-              <a href="redhat.pdf" class="btn btn-primary">Click Here to view Certificate</a>
+              <a href="redhat.pdf" class="btn btn-primary">View Certificate</a>
             </div>
           </div>
-        </div>
-        <div>
-          <div class="card" style="width: 18rem;">
-            <img src="Screenshot (185).png" class="card-img-top" alt="...">
+          
+          <div class="card h-100">
+            <img src="Screenshot (185).png" class="card-img-top" alt="AWS Certification">
             <div class="card-body">
               <h5 class="card-title">AWS Certified Cloud Practitioner</h5>
               <p class="card-text">Successfully earned the AWS Certified Cloud Practitioner certification, demonstrating foundational knowledge of AWS cloud concepts, services, and best practices. 
               Proficient in cloud architecture, security, pricing models, and deployment principles. Skilled in identifying AWS core services and understanding their use cases to design and implement basic cloud solutions.</p>
-              <a href="AWS Certified Cloud Practitioner certificate (2).pdf" class="btn btn-primary">Click Here to view Certificate</a>
+              <a href="AWS Certified Cloud Practitioner certificate (2).pdf" class="btn btn-primary">View Certificate</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="PROJECT">
-      <h1 style="color: #9c27b0; display: flex; flex-direction: row; justify-content: center; padding-top: 12px;">PROJECTS</h1>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-5">
+      <h1 class="section-title">ACHIEVEMENTS</h1>
       <div class="container">
-        <div class="row m-5">
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-            <h5 style="color: #e91e63;">Health Care Management System</h5>
-            <p>The Health Care Management System is a web-based application designed to efficiently manage patients, doctors, and staff. It offers features like patient registration, doctor scheduling, and staff coordination to streamline hospital operations. The system includes intuitive and responsive interfaces for seamless navigation, ensuring easy access to patient records and appointment management. Additionally, it integrates Stripe for secure online payments using dump cards. The 
-            project was developed using CodeReady Studio for the backend and MySQL for database management, ensuring data reliability and security.</p>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="achievement-card p-4 border rounded shadow-sm bg-light text-center h-100">
+              <div class="mb-3"><i class="fas fa-trophy fa-2x text-warning"></i></div>
+              <h6 class="fw-bold">Best Performer in Mathematics</h6>
+              <p class="mb-0 small">Received a shield for outstanding performance in Mathematics on Ramanujan's birthday (10th Grade).</p>
+            </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-            <img src="healthcare.jpg" alt="12" width="100%">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="achievement-card p-4 border rounded shadow-sm bg-light text-center h-100">
+              <div class="mb-3"><i class="fas fa-laptop-code fa-2x text-success"></i></div>
+              <h6 class="fw-bold">Hackathon Participation</h6>
+              <p class="mb-0 small">Actively participated in coding and problem-solving hackathons, enhancing teamwork, creativity, and real-world problem-solving skills.</p>
+            </div>
           </div>
-        </div>
-        <div class="row m-5">
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-            <h5 style="color: #e91e63;">PASSWORD GENERATOR</h5>
-            <p>The Password Generator is a web-based application designed to create strong and secure passwords with customizable options. It allows users to specify the length, complexity, and character types (uppercase, lowercase, numbers, and symbols) for their passwords. The project uses JavaScript for dynamic password generation and CSS for a clean and user-friendly interface. This tool enhances data security by helping users create unpredictable and 
-            complex passwords, making it suitable for personal and professional use.</p>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="achievement-card p-4 border rounded shadow-sm bg-light text-center h-100">
+              <div class="mb-3"><i class="fas fa-graduation-cap fa-2x text-primary"></i></div>
+              <h6 class="fw-bold">Academic Excellence</h6>
+              <p class="mb-0 small">Consistently achieved high grades throughout academic career, including 9.5 CGPA in SSC and 91% in Intermediate.</p>
+            </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-            <img src="password-generator.png" alt="12" width="80%">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="achievement-card p-4 border rounded shadow-sm bg-light text-center h-100">
+              <div class="mb-3"><i class="fas fa-project-diagram fa-2x text-info"></i></div>
+              <h6 class="fw-bold">Successful Project Delivery</h6>
+              <p class="mb-0 small">Designed and developed multiple web-based projects, demonstrating strong technical and project management skills.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="contact">
-      <h1 style="color: #9c27b0; display: flex; flex-direction: row; justify-content: center; padding-top: 12px;">CONTACT</h1>
+
+    <section id="PROJECT" class="py-5">
+      <h1 class="section-title">PROJECTS</h1>
       <div class="container">
-          <div class="row">
-              <div class=" col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                <!-- map -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.6397898811733!2d80.88581257463302!3d17.66721149468474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a36a8b770f19a81%3A0xc3b4f6e5534dbd71!2sSri%20Durga%20Sweets%20%26%20Home%20Foods!5e0!3m2!1sen!2sin!4v1742574531222!5m2!1sen!2sin" 
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-              <div class=" col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                  <!-- contact details -->
-                  <form>
-                      <div class="mb-3">
-                          <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1"
-                              placeholder="name@example.com">
-                      </div>
-                      <div class="mb-3">
-                          <label for="exampleFormControlTextarea1" class="form-label">Suggestions</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
-                      <button class="btn" style="color: white; background-color: #4caf50;">Contact <i class="fa-solid fa-phone"></i></button>
-                  </form>
-              </div>
+        <div class="row align-items-center mb-5">
+          <div class="col-12 col-lg-6">
+            <h5 class="project-title">Health Care Management System</h5>
+            <p>The Health Care Management System is a comprehensive web-based solution designed to streamline hospital operations. Key features include:</p>
+            <ul>
+              <li>Patient registration and management system</li>
+              <li>Doctor appointment scheduling and management</li>
+              <li>Staff coordination and task management</li>
+              <li>Secure payment integration using Stripe</li>
+              <li>Real-time appointment notifications</li>
+              <li>Patient medical history tracking</li>
+              <li>Inventory management for medical supplies</li>
+            </ul>
+            <p>Technologies used: HTML5, CSS3, JavaScript, Bootstrap, MySQL, CodeReady Studio</p>
           </div>
+          <div class="col-12 col-lg-6 project-img">
+            <img src="healthcare.jpg" alt="Healthcare Project" class="img-fluid rounded shadow">
+          </div>
+        </div>
+        
+        <div class="row align-items-center mb-5">
+          <div class="col-12 col-lg-6">
+            <h5 class="project-title">JavaScript-Based Projects</h5>
+            <p>Developed mini projects like <strong>Basic Calculator, Temperature Converter, BMI Calculator, Password Generator, Salary Calculator, and Weather App</strong> using HTML, CSS, and JavaScript. These strengthened my skills in DOM manipulation, event handling, and form validation, while focusing on responsive design and real-time user interaction.</p>
+          </div>
+          <div class="col-12 col-lg-6 project-img">
+            <img src="js-projects.png" alt="JavaScript Mini Projects" class="img-fluid rounded shadow">
+          </div>
+        </div>
       </div>
     </section>
+
+    <section id="contact" class="py-5">
+      <h1 class="section-title">CONTACT</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.6397898811733!2d80.88581257463302!3d17.66721149468474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a36a8b770f19a81%3A0xc3b4f6e5534dbd71!2sSri%20Durga%20Sweets%20%26%20Home%20Foods!5e0!3m2!1sen!2sin!4v1742574531222!5m2!1sen!2sin" 
+            class="map-iframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-12 col-lg-6">
+            <form id="contactForm" class="p-4" onsubmit="return handleSubmit(event)">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" required>
+                <div class="invalid-feedback">Please enter a valid phone number.</div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+                <div class="invalid-feedback">Please enter your message.</div>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact Info</h3>
+            <ul>
+              <li><i class="fas fa-envelope"></i> durgasweets123@gmail.com</li>
+              <li><i class="fas fa-phone"></i> +91 9392483683</li>
+              <li><i class="fas fa-map-marker-alt"></i>Bhadrachalam, Telangana, India</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#ABOUT">About</a></li>
+              <li><a href="#SKILLS">Skills</a></li>
+              <li><a href="#certifications">Certifications</a></li>
+              <li><a href="#PROJECT">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Connect With Me</h3>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/sai-karthikeya-birru-23012126a/"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/saikarthikeya123"><i class="fab fa-github"></i></a>
+              <a href="mailto:durgasweets123@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2024 B Sai Karthikeya. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
