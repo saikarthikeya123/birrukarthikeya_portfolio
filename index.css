@@ -448,3 +448,51 @@
         width: 100%;
     }
 }
+
+/* Education Section Styles */
+#education .edu-card {
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(156, 39, 176, 0.08);
+  padding: 24px 18px;
+  margin-bottom: 24px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+#education .edu-card:hover {
+  box-shadow: 0 4px 16px rgba(33, 150, 243, 0.15);
+  border-color: #9c27b0;
+}
+#education .edu-icon {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #9c27b0;
+}
+#education h6 {
+  color: #2196f3;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+#education p {
+  margin-bottom: 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Common Card Styles for All Sections */
+.custom-card {
+  background: #fff;
+  border: 2px solid #e0e0e0 !important;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(156, 39, 176, 0.08) !important;
+  padding: 24px 18px;
+  margin-bottom: 24px;
+  text-align: center;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+.custom-card:hover {
+  box-shadow: 0 4px 16px rgba(33, 150, 243, 0.15) !important;
+  border-color: #9c27b0 !important;
+}
+/* Ensure .custom-card overrides Bootstrap .card styles */
