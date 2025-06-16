@@ -1,6 +1,7 @@
 // EmailJS initialization
 (function() {
-    emailjs.init("YOUR_PUBLIC_KEY");
+    // TODO: Replace with your actual EmailJS public key
+    emailjs.init("YOUR_PUBLIC_KEY_HERE");
 })();
 
 // Form handling function
@@ -38,8 +39,13 @@ function handleSubmit(event) {
         return false;
     }
 
+    // TODO: Replace with your actual EmailJS service ID and template IDs
+    const SERVICE_ID = "YOUR_SERVICE_ID_HERE";
+    const OWNER_TEMPLATE_ID = "YOUR_OWNER_TEMPLATE_ID_HERE"; // Template for owner notification
+    const THANKYOU_TEMPLATE_ID = "YOUR_THANKYOU_TEMPLATE_ID_HERE"; // Template for thank you email
+
     // Send email to site owner
-    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+    emailjs.send(SERVICE_ID, OWNER_TEMPLATE_ID, {
         from_name: name,
         from_email: email,
         phone: phone,
@@ -48,7 +54,7 @@ function handleSubmit(event) {
     })
     .then(function(response) {
         // After sending to owner, send thank you email to submitter
-        emailjs.send("YOUR_SERVICE_ID", "YOUR_THANKYOU_TEMPLATE_ID", {
+        emailjs.send(SERVICE_ID, THANKYOU_TEMPLATE_ID, {
             to_name: name,
             to_email: email
         })
